@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="index, follow"/>
+    <meta name="copyright" content="2018 Javier Ruiz">
+    <meta name="author" content="Javier R.">
+    <meta name="description" content="Pagina dedicada a la localidad alicantina de Guardamar del Segura">
+    <meta name="keywords" content="playa guardamar alicnte costa verano vacaciones economia historia">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./script/script.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <title>Guardamar del Segura - Alicante</title>
+</head>
+
+<body id="inicio">
+    <header id="cabecera">
+        <i onclick="abrirCerrarmenu()" class="fas fa-angle-double-right" id="boton-menu-cerrado"></i>
+        <i onclick="abrirCerrarmenu()" class="fas fa-angle-double-left" id="boton-menu-abierto"></i>
+        <nav id="menu" class="menu-cerrado">
+            <ul class="boton">
+                <li>
+                    <a href="./index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./index.html#Geografia">Geografía</a>
+                </li>
+                <li>
+                    <a href="./index.html#Historia">Historia</a>
+                </li>
+                <li>
+                    <a href="./index.html#Economia">Economía</a>
+                </li>
+                <li>
+                    <a href="./about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+        <img class="logo" src="./favicon.png" alt="Logo">
+    </header>
+    <main>
+            <h1>Guardamar del Segura</h1>
+
+            <div class="galeria">
+                    <div class="principal">
+                        <img id="principal" src="img/guardamar.jpg" alt="Playa de Guardamar de Segura">
+                    </div>
+                <div class="mini">
+                    <img onclick="galeria1()" src="img/guardamar.jpg" alt="Playa de Guardamar de Segura">
+                    <img onclick="galeria2()" src="img/dunas.jpg" alt="Dunas de Guardamar de Segura">
+                    <img onclick="galeria3()" src="img/pinada.jpg" alt="Pinada de Guardamar de Segura">
+                    <img onclick="galeria4()" src="img/limon.jpg" alt="Limoneros y naranjos en Guardamar de Segura">
+                </div>
+            </div>    
+
+            <h2>Como llegar</h2>
+
+                
+        <div class="container">
+            <img onclick="mostrarCoche()" class="icono-transporte" src="./img/coche.png" alt="Icono coche">
+ 
+            <img onclick="mostrarBus()" class="icono-transporte"  src="./img/bus.png" alt="Icono bus">
+
+            <img onclick="mostrarTren()" class="icono-transporte" src="./img/tren.png" alt="Icono tren">
+ 
+            <img onclick="mostrarAvion()" class="icono-transporte" src="./img/avion.png" alt="Icono avion">
+         </div>
+
+            <p id="transporte" class="transporte"></p>
+
+    </main>
+
+    <footer>
+        <address>
+
+            <div id="hcard-Javier-Ruiz" class="vcard">
+                <span class="fn">Javier Ruiz</span>
+                <div class="org"> <a href="http://todocursos.ml/">Todocursos</a></div>
+                <a class="email" href="mailto:javi@todocursos.cf">javi@todocursos.cf</a>
+                <div class="adr">
+                    <span class="locality">Getafe</span>
+                    ,
+                    <span class="region">Madrid</span>
+                    ,
+                    <span class="country-name">España</span>
+                </div>
+            </div>
+            <div class="copy">
+                <span>Javier Ruiz - 2018</span>
+            <div class="copy">
+                <span>Wikipedia  &copy;</span>
+            </div>
+
+        </address>
+    </footer>
+    <span onclick="subir()" class="botonSubir" id="botonArriba" ><i class="fas fa-arrow-alt-circle-up"></i></span>
+</body>
+</html>

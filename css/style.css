@@ -1,0 +1,948 @@
+@charset "UTF-8";
+*,
+*::before, *::after,
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: "Hind";
+  padding: 0 0.5rem;
+  font-size: 0.7rem;
+}
+
+section {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* HEADER********************************************/
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/Fondo_2.png");
+  background-size: cover;
+  background-position: bottom;
+}
+header .rect {
+  width: 100%;
+  height: 4.4rem;
+  background: #006696;
+  position: absolute;
+}
+header .mobile_menu {
+  padding-top: 1rem;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+header .mobile_menu a {
+  font-size: 2rem;
+  color: #f5eeee;
+}
+header .logo {
+  width: 2rem;
+  height: 2.5rem;
+  position: relative;
+  top: 1rem;
+  left: 1rem;
+  transition: all 0.1s linear;
+}
+header .logo:hover {
+  transform: scale(1.2);
+}
+header .logo img {
+  width: 100%;
+}
+header ul {
+  width: 70%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  margin-top: 0;
+  background: #006696;
+  font-family: "Hind";
+  font-size: 1.5rem;
+  text-align: center;
+  z-index: 20;
+  padding-left: 0;
+}
+header ul li {
+  padding: 1rem 0;
+}
+header ul li:hover {
+  background: #025277;
+}
+header ul li a {
+  color: white;
+  padding: 2rem;
+  text-transform: uppercase;
+}
+header h1 {
+  font-size: 3rem;
+  font-family: "Damion";
+  color: white;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  text-shadow: 1px 2px 5px black;
+}
+header .baguette {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 20rem;
+}
+header .baguette img {
+  width: 100%;
+}
+header .nube1 {
+  width: 40%;
+  height: 20vh;
+  position: absolute;
+  top: 20vh;
+  animation: nubiz 0.8s ease;
+}
+@keyframes nubiz {
+  0% {
+    left: -20%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+header .nubiz {
+  background-image: url("../assets/nubeIz.png");
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+header .nube2 {
+  width: 30vw;
+  height: 15vh;
+  position: absolute;
+  top: 28vh;
+  right: 0;
+  overflow: hidden;
+}
+header .nubde {
+  background-image: url("../assets/nubede.png");
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: nubde 0.7s ease;
+  position: relative;
+}
+@keyframes nubde {
+  0% {
+    right: -15rem;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+/* ************************************************* */
+/* INICIO******************************************* */
+.container {
+  width: 100%;
+}
+.container .wrapper {
+  width: 100%;
+  display: flex;
+  margin-top: 0;
+  position: relative;
+  /*  height: 4.5rem;
+   background: rgb(0, 102, 150);  */
+}
+.container h2 {
+  font-family: "Damion";
+  font-size: 2rem;
+  margin-top: 0rem;
+  padding-top: 2rem;
+  padding-left: 0.5rem;
+  color: #006696;
+}
+.container p {
+  margin-top: 1rem;
+  position: relative;
+}
+.container .wrapper_text {
+  width: 100%;
+  font-family: "hind";
+  font-weight: 600;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.8rem;
+  color: #03558b;
+  line-height: 0.4rem;
+  padding-bottom: 0.5rem;
+}
+.container .wrapper_text q {
+  line-height: 1rem;
+  font-style: italic;
+}
+.container .container_dos {
+  width: 80%;
+  height: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .container_dos h3 {
+  position: absolute;
+  font-family: "Damion";
+  padding-bottom: 3.5rem;
+  font-size: 1.5rem;
+  color: #1f77b6;
+}
+.container .wrapper_dos {
+  background-image: url("../assets/clicheDefinitivo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  transition: 0.3s ease;
+}
+.container .wrapper_dos:hover {
+  opacity: 0;
+  transform: scale(1.8);
+}
+
+.tabla {
+  width: 90%;
+  position: relative;
+  left: 5%;
+  margin: 2rem 0;
+}
+.tabla .title {
+  font-size: 0.8rem;
+}
+.tabla p {
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 0.6rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.cabecera {
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.flex_table {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.flex_table .nombre {
+  width: 25%;
+  text-align: center;
+}
+.flex_table .barra {
+  width: 40%;
+  height: 0.3rem;
+  background: #65aac5;
+  position: relative;
+}
+.flex_table .barra .bar_inter {
+  position: absolute;
+  height: 130%;
+  bottom: 0;
+  background: #267291;
+}
+.flex_table .barra .uno {
+  width: 80%;
+}
+.flex_table .barra .dos {
+  width: 97%;
+}
+.flex_table .barra .tres {
+  width: 57%;
+}
+.flex_table .barra .cuatro {
+  width: 2%;
+}
+.flex_table .percent {
+  width: 25%;
+  text-align: center;
+}
+
+/* *********************************************** */
+/* GEOGRAFÍA************************************** */
+.geo {
+  margin-top: 0;
+  background: #034f7a;
+  padding-bottom: 2rem;
+}
+.geo h2 {
+  font-family: "Damion";
+  font-size: 2rem;
+  margin-top: 0rem;
+  padding-top: 2rem;
+  padding-left: 0.5rem;
+  color: #f5eeee;
+}
+.geo p {
+  color: #f5eeee;
+}
+.geo .foto_geo {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.geo .foto_geo img {
+  width: 100%;
+}
+.geo .hoja {
+  width: 4rem;
+  height: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.geo .hoja i {
+  font-size: 3rem;
+  color: #67d4a7;
+}
+.geo h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: "Hind";
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #67d4a7;
+}
+.geo a {
+  color: #ff907c;
+  font-size: 1.02rem;
+}
+.geo a:hover {
+  color: tomato;
+}
+.geo .bio {
+  width: 100%;
+  padding: 1rem 0.5rem;
+  margin-top: 2rem;
+}
+.geo .bio p {
+  border-radius: 3%;
+  padding: 0.5rem 0 1rem 0.5rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* GALERÍA DE FOTOS***************************** */
+/* SIN REVISAR */
+.wrapper2 {
+  width: 100%;
+  margin-top: 2rem;
+}
+.wrapper2 .fotos {
+  width: 100%;
+  height: 15rem;
+  overflow: hidden;
+  position: relative;
+}
+.wrapper2 .cuadro {
+  width: 20%;
+  height: auto;
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  transition: all 0.4s ease;
+  position: relative;
+}
+.wrapper2 .cuadro:hover {
+  transform: scale(1.4) rotate(-10deg);
+  background-color: transparent;
+  z-index: 30;
+}
+.wrapper2 .text {
+  position: absolute;
+  z-index: 20;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrapper2 .text p {
+  font-family: damion;
+  font-size: 2rem;
+}
+.wrapper2 .mapafr {
+  background-image: url("../assets/Mapa-de-Departamentos_y_regiones_de_Francia_es-1024x958.png");
+  width: 100%;
+  height: 100%;
+  background-color: #070791;
+  background-blend-mode: multiply;
+}
+.wrapper2 .lake {
+  background-image: url("../assets/France_Mountains_Lake_440304.jpg");
+  width: 100%;
+  height: 100%;
+  background-color: #070791;
+  background-blend-mode: multiply;
+}
+.wrapper2 .burdeos {
+  background-image: url("../assets/mejor-zona-para-alojarse-en-burdeos.jpg");
+  width: 100%;
+  height: 100%;
+  background-color: #070791;
+  background-blend-mode: multiply;
+}
+.wrapper2 .corcega {
+  background-image: url("../assets/paraiso-mediteraneo-corcega.jpg");
+  width: 100%;
+  height: 100%;
+  background-color: #070791;
+  background-blend-mode: multiply;
+}
+.wrapper2 .cereales {
+  background-image: url("../assets/800px-Beauce_3.jpg");
+  width: 100%;
+  height: 100%;
+  background-color: #070791;
+  background-blend-mode: multiply;
+}
+.wrapper2 .lavanda {
+  background-image: url("../assets/provenza.jpg");
+  width: 100%;
+  height: 100%;
+  background-color: #070791;
+  background-blend-mode: multiply;
+}
+.wrapper2 .torre1 {
+  background-image: url("../assets/City-of-Paris-France-Eiffel-Tower_1920x1080.jpg");
+  width: 100%;
+  height: 100%;
+  background-color: #070791;
+  background-blend-mode: multiply;
+}
+.wrapper2 .torre2 {
+  background-image: url("../assets/chamonix-mont-blanc--1418045-11.jpg");
+  width: 100%;
+  height: 100%;
+  background-color: #070791;
+  background-blend-mode: multiply;
+}
+
+/* ************************************************* */
+/* HISTORIA***************************************** */
+.container2 {
+  background-image: url("../assets/louvre_13.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(168, 14, 14, 0.8);
+  background-blend-mode: overlay;
+  width: 100%;
+  padding: 0rem 0.5rem;
+  margin-top: 0;
+}
+.container2 h2 {
+  font-family: "Damion";
+  font-size: 2rem;
+  margin-top: 0rem;
+  padding-top: 2rem;
+  padding-left: 0.5rem;
+  color: #f5eeee;
+}
+.container2 p {
+  background: rgba(3, 116, 145, 0.6);
+  color: white;
+  padding: 0.5rem;
+}
+.container2 .napoleon {
+  width: 60%;
+}
+.container2 .napoleon img {
+  width: 100%;
+}
+
+/* ************************************************ */
+/* ECONOMÍA**************************************** */
+.economi {
+  width: 100%;
+  padding: 1rem 0.5rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  background: linear-gradient(180deg, white, rgba(0, 102, 150, 0.3));
+}
+.economi h2 {
+  font-family: "Damion";
+  font-size: 2rem;
+  margin-top: 0rem;
+  padding-top: 2rem;
+  padding-left: 0.5rem;
+  color: #111111;
+}
+.economi .euro {
+  width: 40%;
+  margin-right: 0;
+  position: relative;
+  left: 5%;
+  transition: 0.2s ease;
+}
+.economi .euro:hover {
+  transform: scale(1.6);
+  z-index: 10;
+}
+.economi .euro img {
+  width: 100%;
+  animation: euro 5s linear infinite;
+}
+@keyframes euro {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.economi .franco {
+  width: 40%;
+  position: relative;
+  bottom: 3rem;
+  left: 15%;
+  margin-right: 0;
+  transition: 0.2s ease;
+}
+.economi .franco:hover {
+  transform: scale(1.6);
+}
+.economi .franco img {
+  width: 100%;
+  animation: franco 5s linear infinite;
+}
+@keyframes franco {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* **************************************************** */
+/* ASIDE*********************************************** */
+aside {
+  width: 100%;
+  height: 20vh;
+  background: linear-gradient(to bottom, rgba(0, 102, 150, 0.3), #006696);
+  padding-top: 1rem;
+}
+aside .wrapper_flex_cinco {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+aside .wrapper_flex_cinco p {
+  margin-top: 0;
+  width: 60%;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.7rem;
+  line-height: 1.4;
+}
+aside .wrapper_flex_cinco button {
+  height: 3rem;
+  padding: 0.5rem 0.5rem;
+  border: none;
+  background: #8d1c9c;
+  color: white;
+  box-shadow: -1px 3px 4px black;
+  text-transform: uppercase;
+  border-radius: 10%;
+  transition: all 0.1s linear;
+}
+aside .wrapper_flex_cinco button:hover {
+  background: #700a7e;
+  box-shadow: inset 1px 3px 4px black;
+  transform: scale(0.95);
+}
+
+/* ************************************************** */
+/* FOOTER******************************************** */
+footer {
+  width: 100%;
+  height: 20vh;
+  background: #006696;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+}
+footer p {
+  /* padding-top: 4vh; */
+  color: white;
+  margin-top: -1rem;
+  /* REVISAR */
+  font-size: 0.6rem;
+}
+footer nav {
+  width: 100%;
+  display: flex;
+}
+footer ul {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  padding-left: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer li {
+  width: 100%;
+  padding: 1rem 0.2rem;
+}
+footer a {
+  color: #fff;
+  font-family: "hind";
+  font-size: 0.7rem;
+  position: relative;
+}
+footer a:hover::after {
+  opacity: 1;
+  width: 100%;
+}
+footer a::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+
+/* ******************************************** */
+/* MEDIA QUERIS ***********************************/
+@media screen and (min-width: 380px) {
+  .nube1 {
+    left: 12%;
+  }
+
+  @keyframes nubiz {
+    0% {
+      left: -20%;
+    }
+    100% {
+      left: 12%;
+    }
+  }
+  header h1 {
+    font-size: 5rem;
+    top: 45%;
+  }
+  header .baguette {
+    top: 55%;
+  }
+
+  .tabla .title {
+    font-size: 1.2rem;
+  }
+  .tabla p {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  h4 {
+    font-size: 5rem;
+    padding-top: 3rem;
+  }
+
+  /* ABOUT********************************* */
+  .aboutMe .img_me {
+    width: 50%;
+    left: 25%;
+  }
+}
+@media screen and (min-width: 500px) {
+  * p {
+    font-size: 1rem;
+  }
+
+  q {
+    font-size: 1.2rem;
+  }
+
+  section {
+    padding: 0 1rem;
+  }
+
+  header .mobile_menu {
+    margin-right: 1rem;
+  }
+  header .mobile_menu a {
+    font-size: 3rem;
+    margin-right: 0;
+  }
+  header .logo {
+    width: 3rem;
+  }
+  header h1 {
+    font-size: 6rem;
+  }
+  header .baguette {
+    top: 55%;
+  }
+
+  .container .container_dos h3 {
+    font-size: 2.5rem;
+  }
+
+  .wrapper2 .fotos {
+    height: 25rem;
+  }
+
+  .container2 .napoleon {
+    width: 30%;
+  }
+
+  footer li {
+    padding: 1rem 1rem;
+  }
+  footer a {
+    font-size: 1rem;
+  }
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+.economi .franco {
+  bottom: 5rem;
+}
+.economi h4 {
+  font-size: 6rem;
+}
+
+@media screen and (min-width: 580px) {
+  .economi .euro {
+    width: 30%;
+  }
+  .economi .franco {
+    width: 30%;
+  }
+
+  aside .wrapper_flex_cinco p {
+    padding-top: 1rem;
+  }
+
+  /* ABOUT********************************* */
+  .aboutMe .img_me {
+    width: 50%;
+    left: 25%;
+  }
+  .aboutMe .social {
+    width: 60%;
+    left: 20%;
+  }
+  .aboutMe .social .icon {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  * p {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 0 2rem;
+  }
+
+  header .mobile_menu {
+    display: none;
+  }
+  header nav {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header ul {
+    display: flex;
+    /* REVISAR */
+    padding: 0 1rem;
+    width: 50%;
+    left: 25%;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+  }
+  header li {
+    padding: 0rem 1.5rem;
+  }
+  header li a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    font-family: "hind";
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+  }
+  header .baguette {
+    width: 60%;
+    top: 55%;
+  }
+
+  .container h2 {
+    font-size: 3.5rem;
+  }
+
+  .geo h2 {
+    font-size: 3.5rem;
+  }
+
+  .wraper_flex_geo {
+    display: flex;
+  }
+  .wraper_flex_geo .foto_geo {
+    width: 30rem;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .wraper_flex_geo .text_geo {
+    width: 50%;
+  }
+  .wraper_flex_geo p {
+    margin-top: 0;
+    padding-left: 2rem;
+  }
+
+  .wrapper2 .wrapper_uno {
+    display: flex;
+  }
+  .wrapper2 .wrapper_dos_dos {
+    display: flex;
+  }
+  .wrapper2 .wrapper_tres {
+    display: flex;
+  }
+  .wrapper2 .wrapper_cuatro {
+    display: flex;
+  }
+  .wrapper2 .fotos {
+    width: 50%;
+    height: 25rem;
+  }
+
+  .container2 .wrap_flex_his {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .container2 h2 {
+    font-size: 3.5rem;
+  }
+  .container2 p {
+    width: 50%;
+    margin-right: 0;
+    background: transparent;
+  }
+  .container2 .napoleon {
+    width: 30%;
+  }
+
+  .economi {
+    padding: 1rem 2rem;
+  }
+  .economi .wrap_fle_eco {
+    display: flex;
+    justify-content: center;
+  }
+  .economi h2 {
+    font-size: 3.5rem;
+  }
+  .economi p {
+    width: 50%;
+  }
+  .economi .monedas {
+    width: 25%;
+  }
+  .economi .monedas .euro {
+    width: 70%;
+    padding-top: 0.5rem;
+  }
+  .economi .monedas .franco {
+    width: 70%;
+  }
+
+  aside .wrapper_flex_cinco p {
+    font-size: 1rem;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+
+  /* ABOUT********************************* */
+  .aboutMe .container_flex {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .aboutMe span {
+    font-size: 1rem;
+  }
+  .aboutMe p {
+    width: 60%;
+    position: relative;
+    left: 25%;
+  }
+  .aboutMe .img_me {
+    width: 50%;
+    left: 5%;
+  }
+  .aboutMe .social {
+    width: 60%;
+    left: 20%;
+    margin-top: 4rem;
+  }
+  .aboutMe .social .icon {
+    font-size: 2.5rem;
+  }
+}
+
+/*# sourceMappingURL=css/style.css.map */
