@@ -37,142 +37,168 @@ section {
 header {
   width: 100%;
   height: 100vh;
-  background-image: url("../assets/Fondo_2.png");
-  background-size: cover;
-  background-position: bottom;
 }
-header .rect {
+header .cabecera {
   width: 100%;
-  height: 4.4rem;
+  height: 4rem;
   background: #006696;
-  position: absolute;
-}
-header .mobile_menu {
-  padding-top: 1rem;
-  width: 3rem;
-  height: 3rem;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-header .mobile_menu a {
-  font-size: 2rem;
-  color: #f5eeee;
-}
-header .logo {
-  width: 2rem;
-  height: 2.5rem;
   position: relative;
-  top: 1rem;
-  left: 1rem;
+  z-index: 20;
+  margin-bottom: 0;
+}
+header .nubes {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+header .nube_izq {
+  width: 25%;
+  height: 25%;
+  background-image: url("../assets/nubeIz.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  animation: entradaNubeIzq 0.5s ease-out;
+}
+@keyframes entradaNubeIzq {
+  0% {
+    left: -10%;
+    transform: scale(1.6);
+  }
+  100% {
+    left: 10%;
+    transform: scale(1);
+  }
+}
+header .nube_der {
+  width: 20%;
+  height: 20%;
+  background-image: url("../assets/nubedeBuena.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  opacity: 0.6;
+  top: 20%;
+  right: 10%;
+  z-index: 200;
+  animation: entradaNubeDer 0.5s ease;
+}
+@keyframes entradaNubeDer {
+  0% {
+    right: -15%;
+    transform: scale(0.6);
+  }
+  100% {
+    right: 10%;
+    transform: scale(1);
+  }
+}
+header .btn-home {
+  width: 2.5rem;
+  padding-top: 0.5rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+header .btn-home img {
+  width: 100%;
   transition: all 0.1s linear;
 }
-header .logo:hover {
-  transform: scale(1.2);
+header .btn-home img:hover {
+  transform: scale(1.1);
 }
-header .logo img {
-  width: 100%;
+header button {
+  position: absolute;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  color: white;
+  top: 0.5rem;
+  outline: none;
+  cursor: pointer;
+}
+header .hide-menu {
+  display: none;
 }
 header ul {
-  width: 70%;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: -100%;
-  margin-top: 0;
+  width: 80%;
   background: #006696;
+  position: absolute;
+  z-index: 10;
+  top: 3rem;
+  padding-left: 0;
+  animation: salidaMenu 0.2s ease;
+}
+@keyframes salidaMenu {
+  0% {
+    /*top: -100%;
+    opacity: 0; */
+    transform: scale(0);
+    transform-origin: top left;
+    opacity: 0;
+  }
+  100% {
+    /* top: 3rem; */
+    transform: scale(1);
+    transform-origin: top left;
+    opacity: 1;
+  }
+}
+header li {
+  padding: 1rem;
+}
+header li:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+header a {
+  color: white;
+  text-transform: uppercase;
   font-family: "Hind";
   font-size: 1.5rem;
-  text-align: center;
-  z-index: 20;
-  padding-left: 0;
+  font-weight: 600;
 }
-header ul li {
-  padding: 1rem 0;
-}
-header ul li:hover {
-  background: #025277;
-}
-header ul li a {
-  color: white;
-  padding: 2rem;
-  text-transform: uppercase;
-}
-header h1 {
-  font-size: 3rem;
-  font-family: "Damion";
-  color: white;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-  text-shadow: 1px 2px 5px black;
-}
-header .baguette {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 20rem;
-}
-header .baguette img {
-  width: 100%;
-}
-header .nube1 {
-  width: 40%;
-  height: 20vh;
-  position: absolute;
-  top: 20vh;
-  animation: nubiz 0.8s ease;
-}
-@keyframes nubiz {
-  0% {
-    left: -20%;
-  }
-  100% {
-    left: 0%;
-  }
-}
-header .nubiz {
-  background-image: url("../assets/nubeIz.png");
+header .titulo-logo {
   width: 100%;
   height: 100%;
-  background-size: contain;
+  background-image: url("../assets/Fondo_2.png");
+  background-size: cover;
+  background-position: center bottom;
   background-repeat: no-repeat;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-header .nube2 {
-  width: 30vw;
-  height: 15vh;
-  position: absolute;
-  top: 28vh;
-  right: 0;
-  overflow: hidden;
-}
-header .nubde {
-  background-image: url("../assets/nubede.png");
-  width: 100%;
-  height: 100%;
-  background-size: contain;
+header .logo {
+  flex: 2;
+  width: 30rem;
+  height: 30rem;
+  max-width: 30rem;
+  background-image: url("../assets/logo_baguette.png");
   background-repeat: no-repeat;
-  animation: nubde 0.7s ease;
+  background-size: 100%;
+  background-position: center center;
   position: relative;
 }
-@keyframes nubde {
-  0% {
-    right: -15rem;
-  }
-  100% {
-    right: 0;
-  }
+header h1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 5rem;
+  font-family: "Damion";
+  text-shadow: 1px 2px 5px black;
 }
 
 /* ************************************************* */
 /* INICIO******************************************* */
 .container {
   width: 100%;
+  padding-top: 6rem;
 }
 .container .wrapper {
   width: 100%;
@@ -663,26 +689,6 @@ footer a::after {
 /* ******************************************** */
 /* MEDIA QUERIS ***********************************/
 @media screen and (min-width: 380px) {
-  .nube1 {
-    left: 12%;
-  }
-
-  @keyframes nubiz {
-    0% {
-      left: -20%;
-    }
-    100% {
-      left: 12%;
-    }
-  }
-  header h1 {
-    font-size: 5rem;
-    top: 45%;
-  }
-  header .baguette {
-    top: 55%;
-  }
-
   .tabla .title {
     font-size: 1.2rem;
   }
@@ -713,23 +719,6 @@ footer a::after {
 
   section {
     padding: 0 1rem;
-  }
-
-  header .mobile_menu {
-    margin-right: 1rem;
-  }
-  header .mobile_menu a {
-    font-size: 3rem;
-    margin-right: 0;
-  }
-  header .logo {
-    width: 3rem;
-  }
-  header h1 {
-    font-size: 6rem;
-  }
-  header .baguette {
-    top: 55%;
   }
 
   .container .container_dos h3 {
@@ -795,14 +784,14 @@ footer a::after {
     padding: 0 2rem;
   }
 
-  header .mobile_menu {
+  header .cabecera button {
     display: none;
   }
-  header nav {
+  header .cabecera nav {
     margin-left: auto;
     margin-right: auto;
   }
-  header ul {
+  header .cabecera .menu {
     display: flex;
     /* REVISAR */
     padding: 0 1rem;
@@ -812,20 +801,16 @@ footer a::after {
     align-items: center;
     background: transparent;
   }
-  header li {
+  header .cabecera li {
     padding: 0rem 1.5rem;
   }
-  header li a {
+  header .cabecera li a {
     font-size: 1rem;
     font-weight: 600;
     color: white;
     font-family: "hind";
     text-transform: uppercase;
     transition: all 0.2s linear;
-  }
-  header .baguette {
-    width: 60%;
-    top: 55%;
   }
 
   .container h2 {

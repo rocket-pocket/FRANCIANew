@@ -6,7 +6,8 @@ header{
         height: 4rem;
         background: rgb(0, 102, 150);
         position: relative; 
-        z-index: 20; 
+        z-index: 20;
+        margin-bottom: 0; 
     }
     .nubes{
         width: 100%;
@@ -128,6 +129,7 @@ header{
         height: 100%;
         background-image: url('../assets/Fondo_2.png');
         background-size: cover;
+        background-position: center bottom;
         background-repeat: no-repeat;
         display: flex;
         justify-content: center;

@@ -16,7 +16,7 @@ section{
 
 /* HEADER********************************************/
 
-@import '_header.scss';
+@import '_header2.scss';
 
 /* ************************************************* */
 
@@ -25,6 +25,7 @@ section{
 
 .container{
     width: 100%;
+    padding-top: 6rem;
     .wrapper{
         width: 100%;
         display: flex;

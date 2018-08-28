@@ -276,26 +276,6 @@ footer a::after {
 /* ********** */
 /* MEDIA QUERIS ***********************************/
 @media screen and (min-width: 380px) {
-  .nube1 {
-    left: 12%;
-  }
-
-  @keyframes nubiz {
-    0% {
-      left: -20%;
-    }
-    100% {
-      left: 12%;
-    }
-  }
-  header h1 {
-    font-size: 5rem;
-    top: 45%;
-  }
-  header .baguette {
-    top: 55%;
-  }
-
   .tabla .title {
     font-size: 1.2rem;
   }
@@ -326,23 +306,6 @@ footer a::after {
 
   section {
     padding: 0 1rem;
-  }
-
-  header .mobile_menu {
-    margin-right: 1rem;
-  }
-  header .mobile_menu a {
-    font-size: 3rem;
-    margin-right: 0;
-  }
-  header .logo {
-    width: 3rem;
-  }
-  header h1 {
-    font-size: 6rem;
-  }
-  header .baguette {
-    top: 55%;
   }
 
   .container .container_dos h3 {
@@ -408,14 +371,14 @@ footer a::after {
     padding: 0 2rem;
   }
 
-  header .mobile_menu {
+  header .cabecera button {
     display: none;
   }
-  header nav {
+  header .cabecera nav {
     margin-left: auto;
     margin-right: auto;
   }
-  header ul {
+  header .cabecera .menu {
     display: flex;
     /* REVISAR */
     padding: 0 1rem;
@@ -425,20 +388,16 @@ footer a::after {
     align-items: center;
     background: transparent;
   }
-  header li {
+  header .cabecera li {
     padding: 0rem 1.5rem;
   }
-  header li a {
+  header .cabecera li a {
     font-size: 1rem;
     font-weight: 600;
     color: white;
     font-family: "hind";
     text-transform: uppercase;
     transition: all 0.2s linear;
-  }
-  header .baguette {
-    width: 60%;
-    top: 55%;
   }
 
   .container h2 {

@@ -1,24 +1,4 @@
 @media screen and (min-width: 380px){
-    .nube1{
-        left: 12%;
-    }
-    @keyframes nubiz{
-        0%{
-            left: -20%
-        }
-        100%{
-            left: 12%;
-        }
-    }
-    header{
-        h1{
-            font-size: 5rem;
-            top: 45%;
-        }
-       .baguette{
-        top: 55%;
-        } 
-    }
     .tabla{
         .title{
             font-size: 1.2rem;
@@ -39,9 +19,7 @@
         left: 25%;
         }
     
-    
-    }
-    
+    }   
     
 }
 
@@ -54,25 +32,6 @@
     }
     section{
         padding: 0 1rem;
-    }
-    header{
-        .mobile_menu{
-            margin-right: 1rem;
-            a{
-                font-size: 3rem;
-                margin-right: 0;
-                
-            }
-        }
-        .logo{
-            width: 3rem;
-        } 
-        h1{
-            font-size: 6rem;
-        }
-        .baguette{
-            top: 55%;
-        }
     }
     .container{
         .container_dos{
@@ -147,11 +106,6 @@
     
     }
 }
-
-
-
-
-
 @media screen and (min-width: 769px){
     *p{
         font-size: 1rem;
@@ -160,14 +114,15 @@
         padding: 0 2rem;
     }
     header{
-        .mobile_menu{
-            display: none;
-        }
+        .cabecera{
+            button{
+                display: none;
+            }
         nav{
             margin-left: auto;
             margin-right: auto;
         }
-        ul{
+        .menu{
             display: flex;/* REVISAR */
             padding: 0 1rem;
             width: 50%;
@@ -188,10 +143,7 @@
                 transition: all 0.2s linear;
             }
         } 
-        .baguette{
-            width: 60%;
-            top: 55%;
-        }   
+    } 
     }
     .container{
         h2{
