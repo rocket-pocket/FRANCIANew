@@ -11,7 +11,7 @@ header{
     .rect1{
         width: 98%;
         height: 96%;
-        border: .5px solid white;
+        border: .5px solid #424242;
         position: absolute;
         left: 1%;
         top: 2%;
@@ -19,7 +19,7 @@ header{
     .rect_fixed{
         width: 97%;
         height: 98%;
-        border: .5px solid $blackHeader;
+        border: .5px solid #424242;
         position: fixed;
         z-index: 10;
         left: 1.5%;
@@ -28,34 +28,38 @@ header{
     } 
     .cabecera{
         width: 100%;
-        height: 7rem; 
+        height: 4rem; 
         position: absolute;
         z-index: 10;
         top: 0;
+        padding-top: 1rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     .home{
-        width: 2.5rem;
-        height: 2.5rem;
-        left: 3rem;
+        width: 1rem;
+        height: 1rem;
+        left: 1rem;
         position: relative;
         cursor: pointer;
     }
     .square1{
-        width: 100%;
-        height: 100%;
+        width: 90%;
+        height: 90%;
         border: 1px solid white;
         position: absolute;
+        top: 5%;
+        left: 5%;
         transition: all 0.4s ease;
         &:hover{
             transform: rotate(45deg);
+            border-radius: 50%;
         }
     }
     .square2{
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 150%;
+        height: 150%;
         border: 1px solid white;
         position: absolute;
         top: 50%;
@@ -63,7 +67,7 @@ header{
         transform: translate(-50%, -50%);
     }
     .menu{
-        padding-right: 3rem;
+        padding-right: 0.5rem;
     }
     button{
         background: none;
@@ -72,21 +76,37 @@ header{
         font-weight: 300;
         text-transform: uppercase;
         color: white;
-        font-size: 2rem;
+        font-size: 1.5rem;
         position: relative;
         outline: none;
         cursor: pointer;
         &::before{
             content: '';
-            width: 110%;
+            width: 90%;
             height: 0.3rem;
             background: $blackHeader;
             position: absolute;
             top: 50%;
         }
     }  
-    nav{
+    .hide{
         display: none;
+    }
+    nav{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color:  white;
+        background: blue;
+    }
+    ul{
+        padding: 0 2rem;
+    }
+    li{
+        padding-top: 0.5rem;
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
     }
     .headding{
         width: 100%;
@@ -102,36 +122,23 @@ header{
         font-weight: 300;
         text-transform: uppercase;
         color: white;
-        font-size: 6rem;
+        font-size: 3rem;
         position: relative;
+        &::after{
+            content: '';
+            width: 3%;
+            height: 100%;
+            background: $blackHeader;
+            position: absolute;
+            left: 16%;
+            box-shadow: 80px 1px $blackHeader,
+                        122px 1px $blackHeader
+        }
     }
     .marco{
-        width: 30rem;
-        height: 8rem;
-        border: .3px solid white;
+        width: 15rem;
+        height: 6rem;
+        border: .3px solid #424242;
         position: absolute;
     }
-    .shadow{
-        width: 2%;
-        height: 70%;
-        background: $blackHeader;
-        position: relative;
-        top: 15%;
-        left: 25.5%;
-        box-shadow: 162px 1px $blackHeader,
-                    243px 1px $blackHeader,
-
-    }
 }
-
-
-
-.rect_fixed_black{
-        width: 97%;
-        height: 98%;
-        border: .5px solid white;
-        position: fixed;
-        z-index: 21;
-        left: 1.5%;
-        top: 1%;
-    }
