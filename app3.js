@@ -1,4 +1,5 @@
-const animateArea = document.querySelectorAll(".animate-area");
+function main() {
+  const animateArea = document.querySelectorAll(".animate-area");
 
 observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
@@ -13,4 +14,8 @@ observer = new IntersectionObserver(entries => {
 animateArea.forEach(item => {
   observer.observe(item);
 });
+}
+
+
+document.addEventListener('DOMContentLoaded', main())
 
