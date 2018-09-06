@@ -114,16 +114,16 @@ header button::before {
   position: absolute;
   top: 50%;
 }
-header .hide {
+header nav {
   display: none;
 }
-header nav {
+header .show {
   display: block;
   position: absolute;
   top: 0;
   left: 0;
   color: white;
-  background: blue;
+  background: #7979ca;
 }
 header ul {
   padding: 0 2rem;
@@ -433,7 +433,7 @@ aside button {
   position: relative;
   z-index: 1000;
   cursor: pointer;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
 }
 aside button:hover {
   background: black;

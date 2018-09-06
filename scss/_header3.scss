@@ -89,16 +89,16 @@ header{
             top: 50%;
         }
     }  
-    .hide{
+    nav{
         display: none;
     }
-    nav{
+    .show{
         display: block;
         position: absolute;
         top: 0;
         left: 0;
         color:  white;
-        background: blue;
+        background: rgb(121, 121, 202);
     }
     ul{
         padding: 0 2rem;

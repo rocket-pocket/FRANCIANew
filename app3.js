@@ -14,7 +14,21 @@ observer = new IntersectionObserver(entries => {
 animateArea.forEach(item => {
   observer.observe(item);
 });
+
+  let abrirMenu = document.querySelector('.menu')
+  /* console.log(ocultarMenu, abrirMenu) */
+  abrirMenu.addEventListener('click', mostrarMenu())  
+
+  function mostrarMenu(){
+    /* ocultarMenu.classList.toogle('hide') */
+    console.log('hola')
+    let ocultarMenu = document.querySelector('.hide')
+    ocultarMenu.classList.toggle('hide')
+  }
+
+
 }
+/* no vale */
 
 
 document.addEventListener('DOMContentLoaded', main())
