@@ -1,0 +1,547 @@
+*,
+*::before, *::after,
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  height: 2000px;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: black;
+  position: relative;
+  overflow: hidden;
+}
+header .botomm-line {
+  width: 98%;
+  height: 1px;
+  background: #343434;
+  position: fixed;
+  bottom: 2%;
+  left: 1%;
+  z-index: 200;
+}
+header .left-line {
+  width: 1px;
+  height: 94%;
+  background: #343434;
+  position: fixed;
+  left: 1%;
+  top: 4%;
+}
+header .right-line {
+  width: 1px;
+  height: 94%;
+  background: #343434;
+  position: fixed;
+  right: 1%;
+  top: 4%;
+}
+header .wrapper {
+  width: 100%;
+  height: 3rem;
+  position: fixed;
+  padding-top: 1.5rem;
+  z-index: 200;
+}
+header .nav {
+  width: 98%;
+  height: 3rem;
+  border-top: 1px solid #343434;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+header .logo {
+  width: 3rem;
+  height: 100%;
+  border: 1px solid #343434;
+  position: relative;
+  cursor: pointer;
+}
+header .logo::before {
+  content: "";
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #343434;
+  bottom: 0.2rem;
+  left: 0.2rem;
+}
+header .logo::after {
+  content: "menu";
+  font-size: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: #343434;
+  text-transform: uppercase;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+header .logo:hover::after {
+  left: 120%;
+  opacity: 1;
+}
+header .menu {
+  width: 3rem;
+  height: 100%;
+  float: right;
+  border: 1px solid #343434;
+  position: relative;
+  cursor: pointer;
+}
+header .menu::before {
+  content: "";
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #343434;
+  bottom: 0.2rem;
+  left: 0.19rem;
+  border-radius: 50%;
+  transition: all 0.3s linear;
+}
+header .menu::after {
+  content: "home";
+  font-size: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: #343434;
+  text-transform: uppercase;
+  position: absolute;
+  top: 20%;
+  right: 50%;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+header .menu:hover::after {
+  right: 120%;
+  opacity: 1;
+}
+header .menu:hover::before {
+  width: 80%;
+  height: 80%;
+  border-radius: 0;
+  left: 0.27rem;
+  bottom: 0.24rem;
+}
+header .barras-menu {
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+}
+header span {
+  width: 100%;
+  height: 1px;
+  background: #343434;
+  position: absolute;
+  top: 0.4rem;
+}
+header span:nth-child(1) {
+  width: 90%;
+  height: 1px;
+  background: #343434;
+  position: absolute;
+  top: 0.9rem;
+}
+header span:nth-child(2) {
+  width: 80%;
+  height: 1px;
+  background: #343434;
+  position: absolute;
+  top: 1.3rem;
+}
+header .hide-menu {
+  display: none;
+}
+header ul {
+  width: 10rem;
+  height: auto;
+  background: black;
+  position: absolute;
+  top: 100%;
+  left: 2rem;
+  z-index: -20;
+  animation: menu-desp 0.2s ease-in 1;
+}
+@keyframes menu-desp {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+header li {
+  padding: 1rem;
+}
+header a {
+  text-decoration: none;
+  color: #343434;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  text-transform: uppercase;
+}
+header a::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #343434;
+  transition: all 0.3s linear;
+}
+header a:hover::after {
+  width: 100%;
+}
+header .title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: white;
+  font-size: 6rem;
+  position: relative;
+}
+header h1::before {
+  content: "";
+  width: 3%;
+  height: 100%;
+  background: black;
+  position: absolute;
+  left: 16%;
+  box-shadow: 115px 1px black, 242px 1px black;
+}
+header h1::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 3px;
+  background: white;
+  top: 100%;
+  left: -10%;
+  opacity: 0;
+  animation: welcome 2s ease-out 1;
+}
+@keyframes welcome {
+  0% {
+    transform: scale(0);
+    transform-origin: center;
+  }
+  49% {
+    transform: scale(0);
+    transform-origin: center;
+  }
+  80% {
+    transform: scale(0.5);
+    transform-origin: center;
+  }
+  95% {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.main-wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inicio .circulo {
+  width: 20rem;
+  height: 20rem;
+  background: #343434;
+  opacity: 0.3;
+  position: absolute;
+  margin-top: 2rem;
+  left: -10%;
+  border-radius: 50%;
+  z-index: -100;
+}
+.inicio .content {
+  padding: 5rem 0 0 0;
+}
+.inicio .imagen {
+  width: 90%;
+  top: 4rem;
+  position: relative;
+  left: 5%;
+}
+.inicio .imagen img {
+  width: 100%;
+  position: relative;
+  z-index: 190;
+  filter: grayscale(1);
+  transition: all 0.5s ease;
+}
+.inicio .imagen img:hover {
+  filter: grayscale(0.2);
+}
+
+section {
+  margin-bottom: 6rem;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  /* font-weight: 700; */
+  text-transform: uppercase;
+  position: relative;
+  color: #044e8a;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+* p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+.main-wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inicio .circulo {
+  width: 20rem;
+  height: 20rem;
+  background: #343434;
+  opacity: 0.3;
+  position: absolute;
+  margin-top: 2rem;
+  left: -10%;
+  border-radius: 50%;
+  z-index: -100;
+}
+.inicio .content {
+  padding: 5rem 0 0 0;
+}
+.inicio .imagen {
+  width: 90%;
+  top: 4rem;
+  position: relative;
+  left: 5%;
+}
+.inicio .imagen img {
+  width: 100%;
+  position: relative;
+  z-index: 190;
+  filter: grayscale(1);
+  transition: all 0.5s ease;
+}
+.inicio .imagen img:hover {
+  filter: grayscale(0.2);
+}
+
+.tabla {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 40rem;
+  padding-left: 0.5rem;
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(7, 86, 151, 0.1);
+}
+.tabla .items {
+  font-weight: 800;
+  text-transform: uppercase;
+  position: relative;
+  padding-top: 0.5rem;
+}
+.tabla .items::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 350%;
+  height: 1px;
+  background: #424242;
+  opacity: 0.2;
+}
+.tabla .items::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: calc(650%/2);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #424242;
+  opacity: 0.2;
+}
+.tabla .numeros {
+  padding: 0.25rem 0;
+}
+
+.names {
+  flex: 1;
+}
+
+.barras {
+  flex: 4;
+}
+
+.percents {
+  flex: 1;
+}
+
+.geografia {
+  position: relative;
+}
+.geografia .imagen-geo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  max-width: 25rem;
+  height: auto;
+}
+.geografia .mountains {
+  width: 50%;
+  height: auto;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.geografia .mountains img {
+  width: 100%;
+  max-width: 10rem;
+}
+.geografia .galery {
+  margin-top: 4rem;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+.geografia .galery img {
+  width: 100%;
+  filter: grayscale(0.9);
+  transition: 0.8s ease;
+}
+.geografia .galery img:hover {
+  filter: grayscale(0);
+}
+
+.bio h3 {
+  font-family: "Open Sans", sans-serif;
+  /* font-weight: 700; */
+  text-transform: uppercase;
+  position: relative;
+  color: #044e8a;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.bio .origami {
+  margin-bottom: 2rem;
+}
+.bio .btn-info {
+  width: 100%;
+  text-align: center;
+  color: #044e8a;
+}
+.bio button {
+  width: 4rem;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+}
+.bio button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  width: 4rem;
+  transform: scale(0.5);
+  transform-origin: center;
+  height: 1px;
+  background: red;
+  transition: all 0.2s linear;
+}
+.bio button:hover::after {
+  transform-origin: center;
+  transform: scale(1);
+}
+
+.imagen-his {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.imagen-his img {
+  width: 100%;
+}
+
+.imagen-eco {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.imagen-eco img {
+  width: 100%;
+}
+
+aside {
+  width: 90%;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+}
+aside button {
+  width: 4rem;
+  padding: 0.5rem 0;
+  background: none;
+  border: none;
+}
+
+/*# sourceMappingURL=css/style4.css.map */

@@ -1,0 +1,38 @@
+.geografia{
+    position: relative;
+    .imagen-geo{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60%;
+        max-width: 25rem;
+        height: auto;
+    }
+    .mountains{
+        width: 50%;
+        height: auto;
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        img{
+            width: 100%;
+            max-width: 10rem;
+        }
+    }
+    .galery{
+        margin-top: 4rem;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        img{
+            width: 100%;  
+            filter: grayscale(0.9);
+            transition: 0.8s ease ;
+            &:hover{
+                filter: grayscale(0);
+            }
+        }  
+    }
+}

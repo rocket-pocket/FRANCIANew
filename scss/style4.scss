@@ -1,0 +1,27 @@
+@import '_reset.scss';
+@import '_variables4.scss';
+@import '_header4.scss';
+section{
+    margin-bottom: 6rem;
+}
+h2{
+    font-family: 'Open Sans', sans-serif;
+    /* font-weight: 700; */
+    text-transform: uppercase;
+    position: relative;
+    color: rgb(4, 78, 138);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+*p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8rem;
+}
+@import '_main4.scss';
+@import '_tabla.scss';
+@import '_geo.scss';
+@import '_bio.scss';
+@import '_his.scss';
+@import '_eco.scss';
+@import '_aside.scss';

@@ -1,0 +1,259 @@
+body{
+    height: 2000px;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    position: relative;
+    overflow: hidden;
+    .botomm-line{
+        width: 98%;
+        height: 1px;
+        background: $headerGrey;
+        position: fixed;
+        bottom: 2%;
+        left: 1%;
+        z-index: 200;
+
+    }
+    .left-line{
+        width: 1px;
+        height: 94%;
+        background: $headerGrey;
+        position: fixed;
+        left: 1%;
+        top: 4%;
+    }
+    .right-line{
+        width: 1px;
+        height: 94%;
+        background: $headerGrey;
+        position: fixed;
+        right: 1%;
+        top: 4%;
+    }
+    .wrapper{
+        width: 100%;
+        height: 3rem;
+        position: fixed; 
+        padding-top: 1.5rem;
+        z-index: 200;
+    }
+    .nav{
+        width: 98%;
+        height: 3rem;
+        border-top: 1px solid $headerGrey;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+    .logo{
+        width: 3rem;
+        height: 100%;
+        border: 1px solid $headerGrey;
+        position: relative;
+        cursor: pointer;
+        &::before{
+            content:"";
+            position: absolute;
+            width: 2.5rem;
+            height: 2.5rem;
+            border: 1px solid $headerGrey;
+            bottom: .2rem;
+            left: .2rem; 
+        }
+        &::after{
+            content:"menu";
+            font-size: 1.5rem;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300; 
+            color: $headerGrey;
+            text-transform: uppercase;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            opacity: 0;
+            transition: all 0.2s linear;
+        }
+        &:hover::after{
+            left: 120%;
+            opacity: 1;
+        }
+    }
+    .menu{
+        width: 3rem;
+        height: 100%;
+        float: right;
+        border: 1px solid $headerGrey;
+        position: relative;
+        cursor: pointer;
+        &::before{
+            content:"";
+            position: absolute;
+            width: 2.5rem;
+            height: 2.5rem;
+            border: 1px solid $headerGrey;
+            bottom: .2rem;
+            left: .19rem; 
+            border-radius: 50%;
+            transition: all 0.3s linear;
+        }
+        &::after{
+            content:"home";
+            font-size: 1.5rem;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300; 
+            color: $headerGrey;
+            text-transform: uppercase;
+            position: absolute;
+            top: 20%;
+            right: 50%;
+            opacity: 0;
+            transition: all 0.2s linear;
+        }
+        &:hover::after{
+            right: 120%;
+            opacity: 1;
+        }
+        &:hover::before{
+                width: 80%; 
+                height: 80%; 
+                border-radius: 0;
+                left: .27rem;
+                bottom: .24rem;             
+        }
+    }
+    .barras-menu{
+        width: 70%;
+        height: 70%;
+        position: absolute;
+        top: 15%;
+        left: 15%;
+    }
+    span{
+        width: 100%;
+        height: 1px;
+        background: $headerGrey;
+        position: absolute;
+        top: .4rem;
+    }
+    span:nth-child(1){
+        width: 90%;
+        height: 1px;
+        background: $headerGrey;
+        position: absolute;
+        top: .9rem;
+    }
+    span:nth-child(2){
+        width: 80%;
+        height: 1px;
+        background: $headerGrey;
+        position: absolute;
+        top: 1.3rem;
+    }
+    .hide-menu{
+        display: none;
+    }
+    ul{
+        width: 10rem;
+        height: auto;
+        background: black;
+        position: absolute;
+        top: 100%;
+        left: 2rem;
+        z-index: -20;
+        animation: menu-desp 0.2s ease-in 1;
+    }
+    @keyframes menu-desp{
+        from{
+            left: -100%;
+        }
+        to{
+            left: 0;
+        }
+    }
+    li{
+        padding: 1rem;
+    }
+    a{
+        text-decoration: none;
+        color: $headerGrey;
+        font-size: 1rem;
+        font-family: 'Open Sans', sans-serif;
+        position: relative;
+        text-transform: uppercase;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: $headerGrey;
+            transition: all 0.3s linear;
+        }
+        &:hover::after{
+            width: 100%;
+        }
+    }
+    .title{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    h1{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: white;
+        font-size: 6rem;
+        position: relative;
+        &::before{
+            content: '';
+            width: 3%;
+            height: 100%;
+            background: black;
+            position: absolute;
+            left: 16%;
+            box-shadow: 115px 1px black, 
+                        242px 1px black;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 120%;
+            height: 3px;
+            background: white;
+            top: 100%;
+            left: -10%;
+            opacity: 0;
+            animation: welcome 2s ease-out 1;
+        }
+        @keyframes welcome {
+            0%{
+                transform: scale(0);
+                transform-origin: center; 
+            }
+            49%{
+                transform: scale(0);
+                transform-origin: center; 
+            }
+            80%{
+                transform: scale(0.5);
+                transform-origin: center; 
+            }
+            95%{
+                transform: scale(0.5);
+                opacity: 1;
+            }
+            100%{
+                transform: scale(1);
+                opacity: 0;
+            }
+        }
+    }
+}
+@import '_main4.scss';

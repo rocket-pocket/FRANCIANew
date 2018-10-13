@@ -1,0 +1,48 @@
+.bio{
+    h3{
+        font-family: 'Open Sans', sans-serif;
+        /* font-weight: 700; */
+        text-transform: uppercase;
+        position: relative;
+        color: rgb(4, 78, 138);
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .origami{
+        margin-bottom: 2rem;
+    }
+    .btn-info{
+        width: 100%;
+        text-align: center;
+        color: rgb(4, 78, 138);
+    }
+    button{
+        width: 4rem;
+        background: none;
+        border: none;
+        font-size: 1rem;
+        margin: 0 auto;
+        position: relative;
+        cursor: pointer;
+        outline: none;
+        &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0; 
+            top: 100%;
+            width: 4rem;
+            transform: scale(0.5);
+            transform-origin: center;
+            height: 1px;
+            background: red;
+            transition: all 0.2s linear;
+        }
+        &:hover::after{
+            transform-origin: center;
+            transform: scale(1)
+        }
+    }
+}
