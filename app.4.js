@@ -1,11 +1,16 @@
 class MenuDesp{
     constructor(){
         this.menu = document.querySelector('.hide-menu')
-        this.btnAbrirMenu = document.querySelector('#btn-abrir-menu')        
+        this.btnAbrirMenu = document.querySelector('#btn-abrir-menu') 
+        this.btnCerrar = document.querySelector('.cerrar')       
 
         this.btnAbrirMenu.addEventListener('click', this.mostrarMenu.bind(this))
+        this.btnCerrar.addEventListener('click', this.cerrarMenu.bind(this))
     }
     mostrarMenu(){
+        this.menu.classList.toggle('hide-menu')
+    }
+    cerrarMenu(){
         this.menu.classList.toggle('hide-menu')
     }
 }

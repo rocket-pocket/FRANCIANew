@@ -1,12 +1,11 @@
 @import '_reset.scss';
 @import '_variables4.scss';
-@import '_header4.scss';
+@import '_header4b.scss';
 section{
     margin-bottom: 6rem;
 }
 h2{
     font-family: 'Open Sans', sans-serif;
-    /* font-weight: 700; */
     text-transform: uppercase;
     position: relative;
     color: rgb(4, 78, 138);
@@ -25,3 +24,5 @@ h2{
 @import '_his.scss';
 @import '_eco.scss';
 @import '_aside.scss';
+@import '_footer4.scss';
+@import '_queris.scss'

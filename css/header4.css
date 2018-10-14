@@ -7,75 +7,22 @@ header {
   height: 100vh;
   background: black;
   position: relative;
-  overflow: hidden;
-  /* &::before{
-      content: "";
-      position: fixed;
-      top: 2.5%;
-      left: 1%;
-      height: 95%;
-      border-left: 1px solid rgb(146, 146, 146);        
-  }
-  &::after{
-      content: "";
-      position: fixed;
-      top: 5%;
-      left: 99%;
-      height: 93%;
-      border-left: 1px solid rgb(146, 146, 146);
-      
-  } */
 }
-header .main-animation {
-  width: 100%;
-  height: 100%;
-  background: white;
-  position: absolute;
-  top: -100%;
-  z-index: 999999;
-  animation: presentacion 2s ease-in 1;
+header::before {
+  content: "";
+  position: fixed;
+  top: 2.5%;
+  left: 1%;
+  height: 95%;
+  border-left: 1px solid #929292;
 }
-@keyframes presentacion {
-  from {
-    top: -100%;
-  }
-  to {
-    top: 200vh;
-  }
-}
-header .main-animation-dos {
-  width: 100%;
-  height: 50%;
-  background: blue;
-  position: absolute;
-  top: -150%;
-  z-index: 999999;
-  animation: presentacion-dos 2.3s ease-in 1;
-}
-@keyframes presentacion-dos {
-  from {
-    top: -150%;
-  }
-  to {
-    top: 250%;
-  }
-}
-header .main-animation-tres {
-  width: 100%;
-  height: 75%;
-  background: #7878b8;
-  position: absolute;
-  top: -200%;
-  z-index: 999999;
-  animation: presentacion-tres 2.2s ease-in 1;
-}
-@keyframes presentacion-tres {
-  from {
-    top: -200%;
-  }
-  to {
-    top: 175%;
-  }
+header::after {
+  content: "";
+  position: fixed;
+  top: 5%;
+  left: 99%;
+  height: 93%;
+  border-left: 1px solid #929292;
 }
 header .botomm-line {
   width: 98%;
@@ -102,68 +49,12 @@ header .logo {
   width: 3rem;
   height: 100%;
   border: 1px solid #929292;
-  position: relative;
-  cursor: pointer;
-}
-header .logo::before {
-  content: "";
-  position: absolute;
-  width: 2.5rem;
-  height: 2.5rem;
-  border: 1px solid #929292;
-  bottom: 0.2rem;
-  left: 0.15rem;
-}
-header .logo::after {
-  content: "menu";
-  font-size: 1.5rem;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  color: #929292;
-  text-transform: uppercase;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  opacity: 0;
-  transition: all 0.2s linear;
-}
-header .logo:hover::after {
-  left: 120%;
-  opacity: 1;
 }
 header .menu {
   width: 3rem;
   height: 100%;
   float: right;
   border: 1px solid #929292;
-  position: relative;
-  cursor: pointer;
-}
-header .menu::before {
-  content: "";
-  position: absolute;
-  width: 2.5rem;
-  height: 2.5rem;
-  border: 1px solid #929292;
-  bottom: 0.2rem;
-  left: 0.15rem;
-}
-header .menu::after {
-  content: "home";
-  font-size: 1.5rem;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  color: #929292;
-  text-transform: uppercase;
-  position: absolute;
-  top: 20%;
-  right: 50%;
-  opacity: 0;
-  transition: all 0.2s linear;
-}
-header .menu:hover::after {
-  right: 120%;
-  opacity: 1;
 }
 header ul {
   display: none;
@@ -193,6 +84,14 @@ header h1::after {
   box-shadow: 80px 1px black, 122px 1px black;
 }
 
-@imp;
+.inicio {
+  width: 100%;
+  height: 100vh;
+  background: blue;
+}
+.inicio .container {
+  border-top: 90%;
+  border: 1px solid black;
+}
 
 /*# sourceMappingURL=css/header4.css.map */

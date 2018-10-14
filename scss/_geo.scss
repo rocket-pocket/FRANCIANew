@@ -1,3 +1,4 @@
+
 .geografia{
     position: relative;
     .imagen-geo{
@@ -16,7 +17,7 @@
         margin-right: auto;
         img{
             width: 100%;
-            max-width: 10rem;
+            max-width: 15rem;
         }
     }
     .galery{
@@ -30,6 +31,7 @@
             width: 100%;  
             filter: grayscale(0.9);
             transition: 0.8s ease ;
+            position: relative;
             &:hover{
                 filter: grayscale(0);
             }
