@@ -31,7 +31,7 @@ header {
 header .botomm-line {
   width: 96%;
   height: 1px;
-  background: #343434;
+  background: #6b6868;
   position: fixed;
   bottom: 2%;
   left: 2%;
@@ -40,7 +40,7 @@ header .botomm-line {
 header .left-line {
   width: 1px;
   height: 94%;
-  background: #343434;
+  background: #6b6868;
   position: fixed;
   left: 2%;
   top: 4%;
@@ -48,7 +48,7 @@ header .left-line {
 header .right-line {
   width: 1px;
   height: 94%;
-  background: #343434;
+  background: #6b6868;
   position: fixed;
   right: 2%;
   top: 4%;
@@ -63,7 +63,7 @@ header .wrapper {
 header .nav {
   width: 96%;
   height: 3rem;
-  border-top: 1px solid #343434;
+  border-top: 1px solid #6b6868;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -71,7 +71,7 @@ header .nav {
 header .logo {
   width: 3rem;
   height: 100%;
-  border: 1px solid #343434;
+  border: 1px solid #6b6868;
   position: relative;
   cursor: pointer;
   border-top: none;
@@ -81,7 +81,7 @@ header .logo::before {
   position: absolute;
   width: 2.5rem;
   height: 2.5rem;
-  border: 1px solid #343434;
+  border: 1px solid #6b6868;
   bottom: 0.2rem;
   left: 0.2rem;
 }
@@ -106,7 +106,7 @@ header .menu {
   width: 3rem;
   height: 100%;
   float: right;
-  border: 1px solid #343434;
+  border: 1px solid #6b6868;
   position: relative;
   cursor: pointer;
   border-top: none;
@@ -116,7 +116,7 @@ header .menu::before {
   position: absolute;
   width: 2.5rem;
   height: 2.5rem;
-  border: 1px solid #343434;
+  border: 1px solid #6b6868;
   bottom: 0.2rem;
   left: 0.19rem;
   border-radius: 50%;
@@ -156,21 +156,21 @@ header .barras-menu {
 header span {
   width: 100%;
   height: 1px;
-  background: #343434;
+  background: #6b6868;
   position: absolute;
   top: 0.4rem;
 }
 header span:nth-child(1) {
   width: 90%;
   height: 1px;
-  background: #343434;
+  background: #6b6868;
   position: absolute;
   top: 0.9rem;
 }
 header span:nth-child(2) {
   width: 80%;
   height: 1px;
-  background: #343434;
+  background: #6b6868;
   position: absolute;
   top: 1.3rem;
 }
@@ -205,7 +205,7 @@ header li {
 }
 header a {
   text-decoration: none;
-  color: #343434;
+  color: #6b6868;
   font-size: 1rem;
   font-family: "Open Sans", sans-serif;
   position: relative;
@@ -218,7 +218,7 @@ header a::after {
   left: 0;
   width: 0;
   height: 1px;
-  background: #343434;
+  background: #6b6868;
   transition: all 0.3s linear;
 }
 header a:hover::after {
@@ -229,11 +229,12 @@ header .cerrar {
   background: none;
   position: absolute;
   right: 2%;
-  top: 2%;
+  top: 6%;
   border: none;
   outline: none;
   font-size: 1.5rem;
   font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
   cursor: pointer;
   transition: all 0.5s ease;
 }
@@ -304,7 +305,7 @@ header h1::after {
 .inicio .circulo {
   width: 20rem;
   height: 20rem;
-  background: #343434;
+  background: #6b6868;
   opacity: 0.3;
   position: absolute;
   margin-top: 2rem;
@@ -323,8 +324,9 @@ header h1::after {
   left: 5%;
 }
 .inicio .imagen img {
-  width: 100%;
+  width: 90%;
   position: relative;
+  left: 5%;
   z-index: 190;
   filter: grayscale(1);
   transition: all 0.5s ease;
@@ -361,7 +363,7 @@ h2 {
 .inicio .circulo {
   width: 20rem;
   height: 20rem;
-  background: #343434;
+  background: #6b6868;
   opacity: 0.3;
   position: absolute;
   margin-top: 2rem;
@@ -380,8 +382,9 @@ h2 {
   left: 5%;
 }
 .inicio .imagen img {
-  width: 100%;
+  width: 90%;
   position: relative;
+  left: 5%;
   z-index: 190;
   filter: grayscale(1);
   transition: all 0.5s ease;
