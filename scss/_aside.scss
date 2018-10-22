@@ -4,10 +4,17 @@ aside{
     text-align: center;
     margin: 0 auto;
     button{
-        width: 4rem;
+        width: 5rem;
         padding: 0.5rem 0;
         background: none;
         border: none;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        outline: none;
+        font-size: 1.5rem;
+        &:hover{
+            box-shadow: 1px 2px 5px black;
+        }
         
     }
 }

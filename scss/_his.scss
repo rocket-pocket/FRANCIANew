@@ -4,5 +4,10 @@
     margin-right: auto;
     img{
         width: 100%;
+        filter:grayscale(0.9);
+        transition: 0.8s ease ;
+        &:hover{
+            filter:grayscale(0);
+        }
     }
 }
