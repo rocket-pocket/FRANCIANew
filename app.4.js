@@ -12,19 +12,24 @@ class MenuDesp{
        
         const navbar = document.querySelector('#btnHome')
         const btnton= document.querySelector('#btn-abrir-menu') 
+        const btntonAfter = document.querySelector('header .rect')
+        console.log(btntonAfter)
         
 
         window.addEventListener('scroll', function(e) {
           const lastPosition = window.scrollY
-          if (lastPosition > 450 ) {
+          if (lastPosition > 500 ) {
             navbar.classList.add('active')
-            btnton.add('active')
+            btnton.classList.add('active')
+            btntonAfter.classList.add('active')
           } else if (navbar.classList.contains('active')) {
             navbar.classList.remove('active')
-            btnton.remove('active')
+            btnton.classlist.remove('active')
+            btntonAfter.classlist.remove('active')
           } else {
             navbar.classList.remove('active')
-            btnton.remove('active')
+            btnton.classList.remove('active')
+            btntonAfter.classList.remove('active')
           }
         })
     }
