@@ -86,7 +86,7 @@ header .logo::before {
   bottom: 0.2rem;
   left: 0.2rem;
 }
-header .logo::after {
+header .logo p {
   content: "menu";
   font-size: 1.5rem;
   font-family: "Open Sans", sans-serif;
@@ -94,12 +94,12 @@ header .logo::after {
   color: white;
   text-transform: uppercase;
   position: absolute;
-  top: 20%;
+  top: -25%;
   left: 50%;
   opacity: 0;
   transition: all 0.2s linear;
 }
-header .logo:hover::after {
+header .logo:hover p {
   left: 120%;
   opacity: 1;
 }
@@ -124,20 +124,19 @@ header .menu::before {
   border-radius: 50%;
   transition: all 0.3s linear;
 }
-header .menu::after{
-  content: "home";
+header .rect p{
   font-size: 1.5rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   color: white;
   text-transform: uppercase;
   position: absolute;
-  top: 20%;
+  top: -25%;
   right: 50%;
   opacity: 0;
   transition: all 0.2s linear;
 }
-header .menu:hover::after {
+header .rect:hover p{
   right: 120%;
   opacity: 1;
 }
@@ -151,7 +150,10 @@ header .menu:hover::before {
 .menu.active{
   background: white;
 }
-rect.active{
+.rect p.active{
+  color: black;
+}
+.logo p.active{
   color: black;
 }
 .logo.active{
